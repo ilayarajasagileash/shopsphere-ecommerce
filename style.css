@@ -1,0 +1,167 @@
+/* ================================
+   ShopSphere - Main Styles
+================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Buttons */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ================================
+   Header
+================================ */
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+/* Navigation */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #374151;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Theme button */
+
+.theme-button {
+    border: none;
+    background: #f3f4f6;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    font-size: 18px;
+
+    transition: transform 0.2s ease;
+}
+
+.theme-button:hover {
+    transform: scale(1.05);
+}
+
+/* ================================
+   Main
+================================ */
+
+#app {
+    min-height: calc(100vh - 130px);
+}
+
+/* ================================
+   Footer
+================================ */
+
+.footer {
+    background: #111827;
+    color: #d1d5db;
+
+    text-align: center;
+
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* ================================
+   Dark Mode
+================================ */
+
+body.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode .header {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .logo {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #d1d5db;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #60a5fa;
+}
+
+body.dark-mode .theme-button {
+    background: #374151;
+    color: #ffffff;
+}
